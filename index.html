@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー - EST キンスキン</title>
+<style>
+  body { font-family: system-ui, "Hiragino Sans", "Yu Gothic UI", "Meiryo", sans-serif; line-height: 1.8; max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; color: #1f2328; background: #fff; }
+  h1 { font-size: 22px; } h2 { font-size: 17px; margin-top: 28px; }
+  table { border-collapse: collapse; width: 100%; font-size: 14px; } th, td { border: 1px solid #d8dee4; padding: 6px 8px; text-align: left; vertical-align: top; }
+  .note { color: #59636e; font-size: 14px; }
+  @media (prefers-color-scheme: dark) { body { background: #16191d; color: #e6edf3; } th, td { border-color: #3a4048; } .note { color: #9aa4ae; } }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー</h1>
+<p>Chrome 拡張機能「EST キンスキン」（以下「本拡張機能」）の、情報の取り扱いについて説明します。</p>
+<p class="note">制定日：2026年10月16日（同日、カスタマイズの要素の項目を追加）／改定日：2026年10月21日（「元に戻す」を「外す」に、要素の選び方を「画面で選ぶ」だけに）</p>
+
+<h2>1. 開発者のサーバーについて</h2>
+<p>本拡張機能は、開発者が運営するサーバーを使いません。利用者の kintone の情報を、開発者が受け取ることはありません。アクセス解析や広告のためのデータ収集も行いません。</p>
+
+<h2>2. 外部に送る情報</h2>
+<p><strong>kintone 以外の外部には、何も送りません。</strong>AI などの外部サービスとも連携しません。</p>
+
+<h2>3. kintone で読み取る情報と、変更する設定</h2>
+<p>本拡張機能は、利用者がログインしている kintone の画面で、利用者の権限のまま動きます。パスワードや API トークンは使わず、保存もしません。</p>
+<table>
+  <tr><th>読み取る情報</th><th>使う目的</th></tr>
+  <tr><td>画面のデザインのバージョン、アプリ ID、画面の種類（URL から判断）</td><td>対応している画面かを判断するため</td></tr>
+  <tr><td>見た目を変える対象（画面の要素）があるかどうか</td><td>kintone の更新で見た目が反映されない可能性を知らせるため。結果はサイドパネルに出すだけです</td></tr>
+  <tr><td>カスタマイズの空白部分にある要素の ID、クラス、種類、表示されている文字（40 文字まで）。利用者が「画面で選ぶ」でクリックしたときだけ</td><td>見た目を整える要素を選べるようにするため。結果はサイドパネルに出すだけです</td></tr>
+  <tr><td>アプリのフィールドの一覧（フィールドコード、フィールド名、種類）</td><td>フィールドの色を付けるフィールドを選べるようにするため</td></tr>
+  <tr><td>アプリの JavaScript / CSS カスタマイズの設定（ファイル名、適用の範囲、版の番号）</td><td>「適用」「外す」で、確認の画面を出し、ほかのファイルを残したまま設定を変えるため</td></tr>
+  <tr><td>前に本拡張機能で適用した CSS ファイルの内容</td><td>確認の画面で、変わる値の前と後を表示するため</td></tr>
+</table>
+<p><strong>レコードのデータは読み取りません。</strong></p>
+<p>利用者が確認の画面で「適用する」または「外す」を押したときだけ、そのアプリの PC 用のカスタマイズ設定（本拡張機能のファイル est-kinskin.css、est-kinskin-custom.css、est-kinskin-fields.js の追加と削除。どれを変えるかは利用者が選んだタブによります）を変更し、反映します。ほかのファイル、適用の範囲、モバイル用の設定、アプリの一般設定（デザインテーマなど）は変えません。</p>
+
+<h2>4. この端末に保存する情報</h2>
+<table>
+  <tr><th>保存する情報</th><th>保存する場所</th></tr>
+  <tr><td>注意への同意の記録（日時）</td><td>このブラウザーの拡張機能の保存領域（chrome.storage.local）</td></tr>
+  <tr><td>アプリごとの適用の記録（日時、ファイル名、スキンの値、色を付けたフィールドのフィールドコード）</td><td>同上</td></tr>
+  <tr><td>アプリごとのカスタマイズの要素の設定（対象の指定、見た目の値、利用者が書いた CSS）</td><td>このブラウザーの拡張機能の保存領域（chrome.storage.local）</td></tr>
+  <tr><td>アプリごとのフィールドの色の設定（フィールドコードと色）</td><td>このブラウザーの拡張機能の保存領域（chrome.storage.local）</td></tr>
+  <tr><td>作業中のスキンの値、選んでいたタブ</td><td>ブラウザーを閉じると消える領域（chrome.storage.session）</td></tr>
+</table>
+<p>本拡張機能を削除すると、これらの情報も削除されます。</p>
+
+<h2>5. お問い合わせ</h2>
+<p>goldgearloom@gmail.com</p>
+
+<p class="note">「kintone」はサイボウズ株式会社の登録商標です。本拡張機能は、サイボウズ株式会社とは関係のない個人が開発したものです。</p>
+</body>
+</html>
